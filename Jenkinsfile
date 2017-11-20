@@ -1,14 +1,15 @@
 pipeline {
   agent {
-    docker {
-      image 'jenkins/ssh-slave:latest'
+    node {
+      label 'master'
+      }
     }
     
   }
   stages {
     stage('build') {
       steps {
-        sh 'cat /etc/hostname'
+        sh 'mvn package'
       }
     }
   }
