@@ -9,7 +9,7 @@ pipeline {
   stages {
     stage('build') {
       steps {
-        sh 'mvn -X -v settings.xml clean package'
+        sh 'mvn -X -v settings.xml -f simple/pom.xml clean package'
       }
     }
   }
