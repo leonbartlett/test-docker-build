@@ -11,7 +11,7 @@ pipeline {
       steps {
         sh 'mvn --version'
         //sh 'mvn -X -v settings.xml -f simple/pom.xml clean package'
-        sh 'mvn -X clean package'
+        sh 'mvn -v settings.xml -X clean package'
       }
     }
   }
