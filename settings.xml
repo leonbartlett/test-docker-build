@@ -1,5 +1,6 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <settings xmlns="http://maven.apache.org/SETTINGS/1.1.0" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://maven.apache.org/SETTINGS/1.1.0 http://maven.apache.org/xsd/settings-1.1.0.xsd">
+  <!--
   <proxies>
     <proxy>
       <id>internetgateway</id>
@@ -10,11 +11,12 @@
       <nonProxyHosts>*.atradiusnet.com</nonProxyHosts>
     </proxy>
   </proxies>
+  -->
   <mirrors>
     <mirror>
       <id>artifactory</id>
       <mirrorOf>*</mirrorOf>
-      <url>https://ltart001.atradiusnet.com/artifactory/repo</url>
+      <url>https://ltart001.atradiusnet.com/artifactory/atradius</url>
       <name>Artifactory</name>
     </mirror>
   </mirrors>
