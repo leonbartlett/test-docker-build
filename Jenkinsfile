@@ -2,6 +2,7 @@ pipeline {
   agent {
     docker {
 	image 'atradius_maven:v1'
+	registryUrl 'https://ltatr001.atradiusnet.com:5001'
 	args '-v $HOME/.m2:/root/.m2'
       }
     }
